@@ -1,0 +1,14 @@
+C:\GOIT\EyeD\EyeD\EyeD.Domain.Core\bin\Debug\net7.0\EyeD.Domain.Core.deps.json
+C:\GOIT\EyeD\EyeD\EyeD.Domain.Core\bin\Debug\net7.0\EyeD.Domain.Core.runtimeconfig.json
+C:\GOIT\EyeD\EyeD\EyeD.Domain.Core\bin\Debug\net7.0\EyeD.Domain.Core.dll
+C:\GOIT\EyeD\EyeD\EyeD.Domain.Core\bin\Debug\net7.0\EyeD.Domain.Core.pdb
+C:\GOIT\EyeD\EyeD\EyeD.Domain.Core\obj\Debug\net7.0\EyeD.Domain.Core.csproj.AssemblyReference.cache
+C:\GOIT\EyeD\EyeD\EyeD.Domain.Core\obj\Debug\net7.0\EyeD.Domain.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\GOIT\EyeD\EyeD\EyeD.Domain.Core\obj\Debug\net7.0\EyeD.Domain.Core.AssemblyInfoInputs.cache
+C:\GOIT\EyeD\EyeD\EyeD.Domain.Core\obj\Debug\net7.0\EyeD.Domain.Core.AssemblyInfo.cs
+C:\GOIT\EyeD\EyeD\EyeD.Domain.Core\obj\Debug\net7.0\EyeD.Domain.Core.csproj.CoreCompileInputs.cache
+C:\GOIT\EyeD\EyeD\EyeD.Domain.Core\obj\Debug\net7.0\EyeD.Domain.Core.dll
+C:\GOIT\EyeD\EyeD\EyeD.Domain.Core\obj\Debug\net7.0\refint\EyeD.Domain.Core.dll
+C:\GOIT\EyeD\EyeD\EyeD.Domain.Core\obj\Debug\net7.0\EyeD.Domain.Core.pdb
+C:\GOIT\EyeD\EyeD\EyeD.Domain.Core\obj\Debug\net7.0\EyeD.Domain.Core.genruntimeconfig.cache
+C:\GOIT\EyeD\EyeD\EyeD.Domain.Core\obj\Debug\net7.0\ref\EyeD.Domain.Core.dll
