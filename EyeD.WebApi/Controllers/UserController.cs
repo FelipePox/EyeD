@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace EyeD.WebApi.Controllers;
 
 [ApiController]
-[Route("clientes")]
+[Route("users")]
 [AllowAnonymous]
 public sealed class UserController : ControllerBase
 {

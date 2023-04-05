@@ -91,7 +91,7 @@ public sealed class VehicleServices : IVehicleServices
            if (id == Guid.Empty)
               throw new Exception("Id inválido."); 
 
-            var veiculoExistente = await _vehicleRepository.GetManyWhere(v => v.Id == id);
+            var veiculoExistente = await _vehicleRepository.GetOneWhere(v => v.Id == id);
 
            if (veiculoExistente is null)
              throw new Exception("Veículo inexistente");

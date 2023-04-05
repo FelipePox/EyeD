@@ -15,7 +15,7 @@ public static class SwaggerConfig
             options.SwaggerDoc("v1", new OpenApiInfo
             {
                 Version = "v1",
-                Title = "TastyFoods API",
+                Title = "EyeD API",
                 Description = "Interface Swagger da API para a aplicação EyeD (MR)",
                 Contact = new OpenApiContact { Name = "Felipe Cardoso", Email = "felipe.cardoso@go-it.work" }
             });
