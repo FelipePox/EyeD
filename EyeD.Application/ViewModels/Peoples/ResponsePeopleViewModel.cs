@@ -9,6 +9,6 @@
         public string FaceId { get; set; }
         public string ImageId { get; set; }
         public string ExternalImageId { get; set; }
-        public string ReferenceDocumentId { get; set; }
+        public string ReferenceDocument { get; set; }
     }
 }

@@ -19,3 +19,5 @@ C:\GOIT\EyeD\EyeD\EyeD.Infra.CrossCutting.IoC\bin\Debug\net7.0\EyeD.Domain.pdb
 C:\GOIT\EyeD\EyeD\EyeD.Infra.CrossCutting.IoC\bin\Debug\net7.0\EyeD.Infra.Data.pdb
 C:\GOIT\EyeD\EyeD\EyeD.Infra.CrossCutting.IoC\bin\Debug\net7.0\EyeD.Domain.Core.pdb
 C:\GOIT\EyeD\EyeD\EyeD.Infra.CrossCutting.IoC\obj\Debug\net7.0\EyeD.Infra.CrossCutting.IoC.csproj.CopyComplete
+C:\GOIT\EyeD\EyeD\EyeD.Infra.CrossCutting.IoC\bin\Debug\net7.0\EyeD.Application.dll
+C:\GOIT\EyeD\EyeD\EyeD.Infra.CrossCutting.IoC\bin\Debug\net7.0\EyeD.Application.pdb

@@ -53,3 +53,17 @@ C:\GOIT\EyeD\EyeD\EyeD.WebApi\bin\Debug\net7.0\EyeD.Infra.CrossCutting.IoC.dll
 C:\GOIT\EyeD\EyeD\EyeD.WebApi\bin\Debug\net7.0\EyeD.Infra.CrossCutting.IoC.pdb
 C:\GOIT\EyeD\EyeD\EyeD.WebApi\bin\Debug\net7.0\appsettings.Production.json
 C:\GOIT\EyeD\EyeD\EyeD.WebApi\bin\Debug\net7.0\appsettings.Testing.json
+C:\GOIT\EyeD\EyeD\EyeD.WebApi\bin\Debug\net7.0\AutoMapper.dll
+C:\GOIT\EyeD\EyeD\EyeD.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\GOIT\EyeD\EyeD\EyeD.WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\GOIT\EyeD\EyeD\EyeD.WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\GOIT\EyeD\EyeD\EyeD.WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\GOIT\EyeD\EyeD\EyeD.WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\GOIT\EyeD\EyeD\EyeD.WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\GOIT\EyeD\EyeD\EyeD.WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\GOIT\EyeD\EyeD\EyeD.WebApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\GOIT\EyeD\EyeD\EyeD.WebApi\bin\Debug\net7.0\EyeD.Application.dll
+C:\GOIT\EyeD\EyeD\EyeD.WebApi\bin\Debug\net7.0\EyeD.Application.pdb
+C:\GOIT\EyeD\EyeD\EyeD.WebApi\bin\Debug\net7.0\EyeD.WebApi.xml
+C:\GOIT\EyeD\EyeD\EyeD.WebApi\obj\Debug\net7.0\EyeD.WebApi.xml
+C:\GOIT\EyeD\EyeD\EyeD.WebApi\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

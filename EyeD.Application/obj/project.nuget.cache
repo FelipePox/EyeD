@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "1fWfz8ykd/0BNzoWDt7I0Exsv6V000H13Jt9knj7sDGCkMP7h6oP2UPh4JR8AkPLrOk/74b9rhjpDDT4DD3X7Q==",
+  "dgSpecHash": "Uhn+fXdFPJ7oBHr0wO0KqK3UCE8ZTP8rEhmOj/MAQPau3S8o5LtSoFWHcEv6/9qR1N/uMez20ioT6L54u1Xc5g==",
   "success": true,
   "projectFilePath": "C:\\GOIT\\EyeD\\EyeD\\EyeD.Application\\EyeD.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Remakker\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Remakker\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\flunt.br\\2.0.0\\flunt.br.2.0.0.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

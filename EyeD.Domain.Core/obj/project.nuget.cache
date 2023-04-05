@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "BohLYROI2ybaO8djI4VxliMuN8HuB25iExjSseE5DMxmHyIvULsjYe/2bKFu7vch2xHj90NOnhcQVyClskTiRg==",
+  "dgSpecHash": "/uwf0LE7P3DU9ZgQGZ06mwE6OxXVxK2Wh8gZ+QwyIBzKL3w/eBp/UIxKjffbFrCnI5KsCG25ZKm2+SD8+mIiPQ==",
   "success": true,
   "projectFilePath": "C:\\GOIT\\EyeD\\EyeD\\EyeD.Domain.Core\\EyeD.Domain.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Remakker\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Remakker\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\flunt.br\\2.0.0\\flunt.br.2.0.0.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Remakker\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.4\\microsoft.entityframeworkcore.7.0.4.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.4\\microsoft.entityframeworkcore.abstractions.7.0.4.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.4\\microsoft.entityframeworkcore.analyzers.7.0.4.nupkg.sha512",
