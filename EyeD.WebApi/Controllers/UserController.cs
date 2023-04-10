@@ -17,6 +17,9 @@ public sealed class UserController : ControllerBase
         _userServices = userServices;
     }
 
+    /// <summary>
+    /// Login de usuário para poder ter acesso completo das funcionalidades da API.
+    /// </summary>
     [HttpPost("login")]
     public async Task<IActionResult> Login([FromBody] LoginRequestUserViewModel viewModel)
     {

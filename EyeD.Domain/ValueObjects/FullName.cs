@@ -18,16 +18,16 @@ namespace EyeD.Domain.ValueObjects
 
             AddNotifications(new Contract<FullName>()
            .Requires()
-           .IsNotNullOrWhiteSpace(PrimeiroNome, "NomeCompleto.PrimeiroNome", "O nome não pode ser vazio.")
-           .IsGreaterOrEqualsThan(PrimeiroNome.Length, 2, "NomeCompleto.PrimeiroNome", "O primeiro nome não pode conter menos de 3 caracteres.")
+           .IsNotNullOrWhiteSpace(PrimeiroNome, "NomeCompleto.PrimeiroNome", "O primeiro nome não pode ser vazio.")
+           .IsGreaterOrEqualsThan(PrimeiroNome.Length, 2, "NomeCompleto.PrimeiroNome", "O primeiro nome não pode conter menos de 2 caracteres.")
            .IsLowerOrEqualsThan(PrimeiroNome.Length, 20, "NomeCompleto.PrimeiroNome", "O  primeiro nome não pode conter mais de 20 caracteres.")
 
            .IsNotNullOrWhiteSpace(SegundoNome, "NomeCompleto.SegundoNome", "O segundo nome não pode ser vazio.")
-           .IsGreaterOrEqualsThan(SegundoNome.Length, 4, "NomeCompleto.SegundoNome", "O segundo nome não pode conter menos de 3 caracteres.")
+           .IsGreaterOrEqualsThan(SegundoNome.Length, 3, "NomeCompleto.SegundoNome", "O segundo nome não pode conter menos de 3 caracteres.")
            .IsLowerOrEqualsThan(SegundoNome.Length, 50, "NomeCompleto.SegundoNome", "O segundo nome não pode conter mais de 50 caracteres.")
 
-           .IsNotNullOrWhiteSpace(SegundoNome, "NomeCompleto.TerceiroNome", "O segundo nome não pode ser vazio.")
-           .IsGreaterOrEqualsThan(SegundoNome.Length, 4, "NomeCompleto.TerceiroNome", "O terceiro nome não pode conter menos de 3 caracteres.")
+           .IsNotNullOrWhiteSpace(SegundoNome, "NomeCompleto.TerceiroNome", "O terceiro nome não pode ser vazio.")
+           .IsGreaterOrEqualsThan(SegundoNome.Length, 3, "NomeCompleto.TerceiroNome", "O terceiro nome não pode conter menos de 3 caracteres.")
            .IsLowerOrEqualsThan(SegundoNome.Length, 35, "NomeCompleto.TerceiroNome", "O terceiro nome não pode conter mais de 35 caracteres.")
            );
         }

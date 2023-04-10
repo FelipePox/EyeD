@@ -16,17 +16,41 @@ namespace EyeD.WebApi.Controllers
             _peopleServices = peopleServices;
         }
 
+        /// <summary>
+        /// Recupera todos os registros.
+        /// </summary>
         [HttpGet]
         [AllowAnonymous]
         public async Task<IActionResult> GetAll()
         => Ok(await _peopleServices.GetAll());
 
 
+        /// <summary>
+        /// Recupera registro pelo ID.
+        /// </summary>
         [HttpGet]
         [Route("{id}")]
         [AllowAnonymous]
         public async Task<IActionResult> GetById(Guid id)
          => Ok(await _peopleServices.GetById(id));
+
+        /// <summary>
+        /// Registrar uma nova Pessoa.
+        /// </summary>
+
+        /// <remarks>
+        /// Exemplo de payload:
+        /// 
+        ///     {
+        ///        "firstName": "Felipe",
+        ///        "secondName": "Rocha",
+        ///        "thirdName": "Cardoso",
+        ///        "faceId": 001B63844556,
+        ///        "imageId": 001c6d844556,
+        ///        "externalImageId": 001Bd63844d556,
+        ///        "referenceDocument": document-23,   
+        ///     }
+        /// </remarks>
 
         [HttpPost]
         [Authorize]
@@ -42,6 +66,9 @@ namespace EyeD.WebApi.Controllers
             }
         }
 
+        /// <summary>
+        /// Editar Pessoa pelo seu ID.
+        /// </summary>
         [HttpPut]
         [Route("{id}")]
         [Authorize]
@@ -57,6 +84,9 @@ namespace EyeD.WebApi.Controllers
             }
         }
 
+        /// <summary>
+        /// Deletar Pessoa pelo ID.
+        /// </summary>
         [HttpDelete]
         [Route("{id}")]
         [Authorize]

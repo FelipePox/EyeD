@@ -16,17 +16,43 @@ namespace EyeD.WebApi.Controllers
             _hmdServices = hmdServices;
         }
 
+
+        /// <summary>
+        /// Recupera todos os registros.
+        /// </summary>
         [HttpGet]
         [AllowAnonymous]
         public async Task<IActionResult> GetAll()
         => Ok(await _hmdServices.GetAll());
 
+
+        /// <summary>
+        /// Recupera registro pelo ID.
+        /// </summary>
         [HttpGet]
         [Route("{id}")]
         [AllowAnonymous]
         public async Task<IActionResult> GetById(Guid id)
           => Ok(await _hmdServices.GetById(id));
 
+
+        /// <summary>
+        /// Registrar um novo HMD.
+        /// </summary>
+        /// 
+
+        /// <remarks>
+        /// Exemplo de payload:
+        /// 
+        ///     {
+        ///        "sku": "MB-LCD-42-P",
+        ///        "ipv4": "192.168.15.40",
+        ///        "description": "Ocúlos região 3 - Sem riscos ou ocorrências",
+        ///        "MacAddress": 00-1B-63-84-45-56,
+        ///
+        ///     }
+        ///     
+        /// </remarks>
         [HttpPost]
         [Authorize] 
         public async Task<IActionResult> Post([FromBody] RequestHMDViewModel viewModel)
@@ -41,7 +67,9 @@ namespace EyeD.WebApi.Controllers
             }
         }
 
-
+        /// <summary>
+        /// Editar HMD pelo seu ID.
+        /// </summary>
         [HttpPut]
         [Route("{id}")]
         [Authorize]
@@ -57,6 +85,10 @@ namespace EyeD.WebApi.Controllers
             }
         }
 
+
+        /// <summary>
+        /// Deletar HMD pelo ID.
+        /// </summary>
         [HttpDelete]
         [Route("{id}")]
         [Authorize]

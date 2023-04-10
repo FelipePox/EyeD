@@ -16,16 +16,40 @@ public sealed class VehicleController : ControllerBase
         _vehicleServices = vehicleServices;
     }
 
+    /// <summary>
+    /// Recupera todos os registros.
+    /// </summary>
     [HttpGet]
     [AllowAnonymous]
     public async Task<IActionResult> GetAll()
      => Ok(await _vehicleServices.GetAll());
 
+    /// <summary>
+    /// Recupera registro pelo ID.
+    /// </summary>
     [HttpGet]
     [Route("{id}")]
     [AllowAnonymous]
     public async Task<IActionResult> GetById(Guid id)
        => Ok(await _vehicleServices.GetById(id));
+
+
+    /// <summary>
+    /// Registrar um novo Veículo.
+    /// </summary>
+
+    /// <remarks>
+    /// Exemplo de payload:
+    /// 
+    ///     {
+    ///        "plate": "BRA2E19",
+    ///        "model": "Ford-Mustang 2018",
+    ///        "modelYear": "2023",
+    ///        "brand": Ford,
+    ///
+    ///     }
+    ///     
+    /// </remarks>
 
     [HttpPost]
     [Authorize]
@@ -41,6 +65,9 @@ public sealed class VehicleController : ControllerBase
         }
     }
 
+    /// <summary>
+    /// Editar Veículo pelo seu ID.
+    /// </summary>
     [HttpPut]
     [Route("{id}")]
     [Authorize]
@@ -56,6 +83,9 @@ public sealed class VehicleController : ControllerBase
         }
     }
 
+    /// <summary>
+    /// Deletar Veículo pelo ID.
+    /// </summary>
     [HttpDelete]
     [Route("{id}")]
     [Authorize]
