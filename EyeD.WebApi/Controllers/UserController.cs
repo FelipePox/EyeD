@@ -17,9 +17,7 @@ public sealed class UserController : ControllerBase
         _userServices = userServices;
     }
 
-
-    [HttpPost]
-    [Route("login")]
+    [HttpPost("login")]
     public async Task<IActionResult> Login([FromBody] LoginRequestUserViewModel viewModel)
     {
         try

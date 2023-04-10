@@ -6922,23 +6922,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Remakker\\.nuget\\packages\\": {},
+    "C:\\Users\\EnzoGodoy\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GOIT\\EyeD\\EyeD\\EyeD.UnitTests\\EyeD.UnitTests.csproj",
+      "projectUniqueName": "D:\\Dev\\Source\\Repos\\EyeD\\EyeD.UnitTests\\EyeD.UnitTests.csproj",
       "projectName": "EyeD.UnitTests",
-      "projectPath": "C:\\GOIT\\EyeD\\EyeD\\EyeD.UnitTests\\EyeD.UnitTests.csproj",
-      "packagesPath": "C:\\Users\\Remakker\\.nuget\\packages\\",
-      "outputPath": "C:\\GOIT\\EyeD\\EyeD\\EyeD.UnitTests\\obj\\",
+      "projectPath": "D:\\Dev\\Source\\Repos\\EyeD\\EyeD.UnitTests\\EyeD.UnitTests.csproj",
+      "packagesPath": "C:\\Users\\EnzoGodoy\\.nuget\\packages\\",
+      "outputPath": "D:\\Dev\\Source\\Repos\\EyeD\\EyeD.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Remakker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\EnzoGodoy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6954,8 +6954,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\GOIT\\EyeD\\EyeD\\EyeD.Domain\\EyeD.Domain.csproj": {
-              "projectPath": "C:\\GOIT\\EyeD\\EyeD\\EyeD.Domain\\EyeD.Domain.csproj"
+            "D:\\Dev\\Source\\Repos\\EyeD\\EyeD.Domain\\EyeD.Domain.csproj": {
+              "projectPath": "D:\\Dev\\Source\\Repos\\EyeD\\EyeD.Domain\\EyeD.Domain.csproj"
             }
           }
         }
@@ -7007,7 +7007,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
