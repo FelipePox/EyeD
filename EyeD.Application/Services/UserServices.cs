@@ -26,18 +26,18 @@ public sealed class UserServices : IUserServices
         if (string.IsNullOrEmpty(viewModel.Senha) || string.IsNullOrWhiteSpace(viewModel.Senha))
             throw new Exception("Senha inválida.");
 
-        var clienteExistente = await _userRepository.GetOneWhere(
+        var usuarioExistente = await _userRepository.GetOneWhere(
             c => c.Email.Endereco == viewModel.Email
             && c.Password.Texto == viewModel.Senha);
 
-        if (clienteExistente is null)
-            throw new Exception("Não existe nenhum cliente com as credencias especificadas.");
+        if (usuarioExistente is null)
+            throw new Exception("Não existe nenhum usuário com as credencias especificadas.");
 
-        var token = TokenServices.GenerateToken(clienteExistente);
+        var token = TokenServices.GenerateToken(usuarioExistente);
 
-        var clienteMapeado = _mapper.Map<LoginResponseUserViewModel>(clienteExistente);
-        clienteMapeado.Token = token;
+        var usuarioMapeado = _mapper.Map<LoginResponseUserViewModel>(usuarioExistente);
+        usuarioMapeado.Token = token;
 
-        return clienteMapeado;
+        return usuarioMapeado;
     }
 }

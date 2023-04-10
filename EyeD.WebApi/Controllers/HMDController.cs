@@ -28,7 +28,7 @@ namespace EyeD.WebApi.Controllers
           => Ok(await _hmdServices.GetById(id));
 
         [HttpPost]
-        [Authorize]
+        [Authorize] 
         public async Task<IActionResult> Post([FromBody] RequestHMDViewModel viewModel)
         {
             try

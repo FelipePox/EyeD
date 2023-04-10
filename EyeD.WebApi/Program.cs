@@ -21,8 +21,6 @@ builder.Services.AddAutoMapperConfiguration();
 // Resolving Dependency Injection
 builder.Services.AddDependencyInjectionConfiguration();
 
-
-
 var app = builder.Build();
 
 app.UseCors(c =>

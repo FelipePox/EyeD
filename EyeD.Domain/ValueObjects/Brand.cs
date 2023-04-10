@@ -17,7 +17,7 @@ namespace EyeD.Domain.ValueObjects
            .Requires()
            .IsNotNullOrWhiteSpace(Texto, "Brand.Texto", "A marca não pode ser vazia")
            .IsGreaterOrEqualsThan(Texto.Length, 2, "Brand.Texto", "A marca pode conter menos de 2 caracteres.")
-           .IsLowerOrEqualsThan(Texto.Length, 7, "Brand.Texto", "A marca não pode conter mais de 60 caracteres.")
+           .IsLowerOrEqualsThan(Texto.Length, 60, "Brand.Texto", "A marca não pode conter mais de 60 caracteres.")
            );
         }
 

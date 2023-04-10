@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "58XydiQsaagFYnSboqm0+BusYhPqNVgXt9mBJkC9PxI=",
+  "Source": "EyeD.WebApi",
+  "BasePath": "_content/EyeD.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
