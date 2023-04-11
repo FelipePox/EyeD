@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3OL0/DevQLPbed9THDckLRdjrc5Vs4t/WSkHb+WmG1cZ8v+fHf6HWScs1UadLm6u3z3BkIVoFnpPI3H0K7h8Ow==",
+  "dgSpecHash": "Ro6D12icxzdbPwuQmN0rx+X7MGEDI/rO1f/q/VttD+U2e7jb0BMrQI8PvwZXXsWNOv6ZPVthCCrC79Ad5xhiTA==",
   "success": true,
   "projectFilePath": "C:\\GOIT\\EyeD\\EyeD\\EyeD.Domain\\EyeD.Domain.csproj",
   "expectedPackageFiles": [
@@ -31,7 +31,10 @@
     "C:\\Users\\Remakker\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\7.0.0\\pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\Remakker\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
+    "C:\\Users\\Remakker\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\Remakker\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.3\\microsoft.netcore.app.runtime.win-x64.7.0.3.nupkg.sha512",
+    "C:\\Users\\Remakker\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.3\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.3.nupkg.sha512",
+    "C:\\Users\\Remakker\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.3\\microsoft.aspnetcore.app.runtime.win-x64.7.0.3.nupkg.sha512"
   ],
   "logs": []
 }
