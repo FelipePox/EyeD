@@ -26,9 +26,9 @@ namespace EyeD.Domain.ValueObjects
            .IsGreaterOrEqualsThan(SegundoNome.Length, 3, "NomeCompleto.SegundoNome", "O segundo nome não pode conter menos de 3 caracteres.")
            .IsLowerOrEqualsThan(SegundoNome.Length, 50, "NomeCompleto.SegundoNome", "O segundo nome não pode conter mais de 50 caracteres.")
 
-           .IsNotNullOrWhiteSpace(SegundoNome, "NomeCompleto.TerceiroNome", "O terceiro nome não pode ser vazio.")
-           .IsGreaterOrEqualsThan(SegundoNome.Length, 3, "NomeCompleto.TerceiroNome", "O terceiro nome não pode conter menos de 3 caracteres.")
-           .IsLowerOrEqualsThan(SegundoNome.Length, 35, "NomeCompleto.TerceiroNome", "O terceiro nome não pode conter mais de 35 caracteres.")
+           .IsNotNullOrWhiteSpace(TerceiroNome, "NomeCompleto.TerceiroNome", "O terceiro nome não pode ser vazio.")
+           .IsGreaterOrEqualsThan(TerceiroNome.Length, 3, "NomeCompleto.TerceiroNome", "O terceiro nome não pode conter menos de 3 caracteres.")
+           .IsLowerOrEqualsThan(TerceiroNome.Length, 35, "NomeCompleto.TerceiroNome", "O terceiro nome não pode conter mais de 35 caracteres.")
            );
         }
         public string PrimeiroNome { get; private set; }

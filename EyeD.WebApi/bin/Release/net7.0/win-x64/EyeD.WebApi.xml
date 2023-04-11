@@ -4,5 +4,123 @@
         <name>EyeD.WebApi</name>
     </assembly>
     <members>
+        <member name="M:EyeD.WebApi.Controllers.HMDController.GetAll">
+            <summary>
+            Recupera todos os registros.
+            </summary>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.HMDController.GetById(System.Guid)">
+            <summary>
+            Recupera registro pelo ID.
+            </summary>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.HMDController.Post(EyeD.Application.ViewModels.HMDs.RequestHMDViewModel)">
+            <summary>
+            Registrar um novo HMD.
+            </summary>
+            
+             <remarks>
+             Exemplo de payload:
+             
+                 {
+                    "sku": "MB-LCD-42-P",
+                    "ipv4": "192.168.15.40",
+                    "description": "Ocúlos região 3 - Sem riscos ou ocorrências",
+                    "MacAddress": 00-1B-63-84-45-56,
+            
+                 }
+                 
+             </remarks>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.HMDController.Put(EyeD.Application.ViewModels.HMDs.RequestHMDViewModel,System.Guid)">
+            <summary>
+            Editar HMD pelo seu ID.
+            </summary>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.HMDController.Delete(System.Guid)">
+            <summary>
+            Deletar HMD pelo ID.
+            </summary>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.PeopleController.GetAll">
+            <summary>
+            Recupera todos os registros.
+            </summary>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.PeopleController.GetById(System.Guid)">
+            <summary>
+            Recupera registro pelo ID.
+            </summary>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.PeopleController.Post(EyeD.Application.ViewModels.Peoples.RequestPeopleViewModel)">
+            <summary>
+            Registrar uma nova Pessoa.
+            </summary>
+            <remarks>
+            Exemplo de payload:
+            
+                {
+                   "firstName": "Felipe",
+                   "secondName": "Rocha",
+                   "thirdName": "Cardoso",
+                   "faceId": 001B63844556,
+                   "imageId": 001c6d844556,
+                   "externalImageId": 001Bd63844d556,
+                   "referenceDocument": document-23,   
+                }
+            </remarks>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.PeopleController.Put(EyeD.Application.ViewModels.Peoples.RequestPeopleViewModel,System.Guid)">
+            <summary>
+            Editar Pessoa pelo seu ID.
+            </summary>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.PeopleController.Delete(System.Guid)">
+            <summary>
+            Deletar Pessoa pelo ID.
+            </summary>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.UserController.Login(EyeD.Application.ViewModels.User.LoginRequestUserViewModel)">
+            <summary>
+            Login de usuário para poder ter acesso completo das funcionalidades da API.
+            </summary>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.VehicleController.GetAll">
+            <summary>
+            Recupera todos os registros.
+            </summary>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.VehicleController.GetById(System.Guid)">
+            <summary>
+            Recupera registro pelo ID.
+            </summary>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.VehicleController.Post(EyeD.Application.ViewModels.Vehicles.RequestVehicleViewModel)">
+            <summary>
+            Registrar um novo Veículo.
+            </summary>
+             <remarks>
+             Exemplo de payload:
+             
+                 {
+                    "plate": "BRA2E19",
+                    "model": "Ford-Mustang 2018",
+                    "modelYear": "2023",
+                    "brand": Ford,
+            
+                 }
+                 
+             </remarks>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.VehicleController.Put(EyeD.Application.ViewModels.Vehicles.RequestVehicleViewModel,System.Guid)">
+            <summary>
+            Editar Veículo pelo seu ID.
+            </summary>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.VehicleController.Delete(System.Guid)">
+            <summary>
+            Deletar Veículo pelo ID.
+            </summary>
+        </member>
     </members>
 </doc>

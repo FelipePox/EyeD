@@ -7,6 +7,7 @@ public sealed class DescriptionTests
 {
     [Theory]
     [InlineData("")]
+    [InlineData("")]
     [InlineData("     ")]
     [InlineData(StaticData.MAIS_DE_150_CHAR)]
 
