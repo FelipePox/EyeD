@@ -5,6 +5,22 @@ namespace EyeD.UnitTests.Entities;
 
 public sealed class PeopleTests
 {
+
+    [Fact]
+    public void ShouldReturnSuccessWhen_PeopleIsValid()
+    {
+        var nome = new People(
+            new FullNameFakeData().FullNameValido,
+            new FaceIdFakeData().ValidFaceId,
+            new ImageIdFakeData().ImageIdValido,
+            new ExternalImageIdFakeData().ExternalImageIdValido,
+            new ReferenceDocumentFakeData().ValidReferenceDocumente
+
+            );
+
+        Assert.True(nome.IsValid);
+    }
+
     [Fact]
     public void ShouldReturnErrorWhen_fullNameIsInvalid()
     {
@@ -23,7 +39,7 @@ public sealed class PeopleTests
     [Fact]
     public void ShouldReturnErrorWhen_faceIdIsInvalid()
     {
-        var nome = new People(
+        var face = new People(
             new FullNameFakeData().FullNameValido,
             new FaceIdFakeData().InvalidFaceId,
             new ImageIdFakeData().ImageIdValido,
@@ -32,14 +48,14 @@ public sealed class PeopleTests
 
             );
 
-        Assert.False(nome.IsValid);
+        Assert.False(face.IsValid);
     }
 
 
     [Fact]
     public void ShouldReturnErrorWhen_imageIdIsInvalid()
     {
-        var nome = new People(
+        var image = new People(
             new FullNameFakeData().FullNameValido,
             new FaceIdFakeData().ValidFaceId,
             new ImageIdFakeData().ImageIdInvalido,
@@ -48,13 +64,13 @@ public sealed class PeopleTests
 
             );
 
-        Assert.False(nome.IsValid);
+        Assert.False(image.IsValid);
     }
 
     [Fact]
     public void ShouldReturnErrorWhen_externalImageIdIsInvalid()
     {
-        var nome = new People(
+        var externalImage = new People(
             new FullNameFakeData().FullNameValido,
             new FaceIdFakeData().ValidFaceId,
             new ImageIdFakeData().ImageIdValido,
@@ -63,13 +79,13 @@ public sealed class PeopleTests
 
             );
 
-        Assert.False(nome.IsValid);
+        Assert.False(externalImage.IsValid);
     }
 
     [Fact]
     public void ShouldReturnErrorWhen_referenceDocumentsIdIsInvalid()
     {
-        var nome = new People(
+        var referenceDoc = new People(
             new FullNameFakeData().FullNameValido,
             new FaceIdFakeData().ValidFaceId,
             new ImageIdFakeData().ImageIdValido,
@@ -78,6 +94,6 @@ public sealed class PeopleTests
 
             );
 
-        Assert.False(nome.IsValid);
+        Assert.False(referenceDoc.IsValid);
     }
 }
