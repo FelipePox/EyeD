@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LFJGeCf4JYj/jzBBSwaqYYvl47GYbiALZ4QwP6W0oWgYuKXPwsRwmLDbLoKnZ4/SSWHf5g6JupdcCk8f7v6fow==",
+  "dgSpecHash": "Uhn+fXdFPJ7oBHr0wO0KqK3UCE8ZTP8rEhmOj/MAQPau3S8o5LtSoFWHcEv6/9qR1N/uMez20ioT6L54u1Xc5g==",
   "success": true,
   "projectFilePath": "C:\\GOIT\\EyeD\\EyeD\\EyeD.Application\\EyeD.Application.csproj",
   "expectedPackageFiles": [
@@ -35,19 +35,13 @@
     "C:\\Users\\Remakker\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\7.0.0\\pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
-    "C:\\Users\\Remakker\\.nuget\\packages\\runtime.any.system.runtime\\4.3.0\\runtime.any.system.runtime.4.3.0.nupkg.sha512",
-    "C:\\Users\\Remakker\\.nuget\\packages\\runtime.any.system.text.encoding\\4.3.0\\runtime.any.system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.28.1\\system.identitymodel.tokens.jwt.6.28.1.nupkg.sha512",
-    "C:\\Users\\Remakker\\.nuget\\packages\\system.private.uri\\4.3.0\\system.private.uri.4.3.0.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\Remakker\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\Remakker\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.3\\microsoft.netcore.app.runtime.win-x64.7.0.3.nupkg.sha512",
-    "C:\\Users\\Remakker\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.3\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.3.nupkg.sha512",
-    "C:\\Users\\Remakker\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.3\\microsoft.aspnetcore.app.runtime.win-x64.7.0.3.nupkg.sha512"
+    "C:\\Users\\Remakker\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }
