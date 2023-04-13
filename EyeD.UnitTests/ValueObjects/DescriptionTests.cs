@@ -7,10 +7,8 @@ public sealed class DescriptionTests
 {
     [Theory]
     [InlineData("")]
-    [InlineData("")]
     [InlineData("     ")]
     [InlineData(StaticData.MAIS_DE_150_CHAR)]
-
    public void ShouldReturn_Error_WhenDescrpiton_IsInvalid(string description)
     {
         var desc = new Description(description);
