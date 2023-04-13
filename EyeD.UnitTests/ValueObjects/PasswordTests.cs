@@ -1,6 +1,5 @@
 ﻿using EyeD.Domain.ValueObjects;
 using EyeD.UnitTests.FakeData;
-using Xunit;
 
 namespace EyeD.UnitTests.ValueObjects;
 
