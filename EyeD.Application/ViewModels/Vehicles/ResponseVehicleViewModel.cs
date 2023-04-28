@@ -7,6 +7,7 @@ public class ResponseVehicleViewModel
     public string Model { get; set; }
     public string ModelYear { get; set; }
     public string Brand { get; set; }
+    public string ReferenceDocument { get; set; }
 
     public DateTime CriadoEm { get; set; }
     public DateTime AtualizadoEm { get; set; }

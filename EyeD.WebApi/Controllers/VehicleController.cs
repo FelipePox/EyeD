@@ -20,7 +20,7 @@ public sealed class VehicleController : ControllerBase
     /// Recupera todos os registros.
     /// </summary>
     [HttpGet]
-    [AllowAnonymous]
+    [Authorize]
     public async Task<IActionResult> GetAll()
      => Ok(await _vehicleServices.GetAll());
 
@@ -29,7 +29,7 @@ public sealed class VehicleController : ControllerBase
     /// </summary>
     [HttpGet]
     [Route("{id}")]
-    [AllowAnonymous]
+    [Authorize]
     public async Task<IActionResult> GetById(Guid id)
        => Ok(await _vehicleServices.GetById(id));
 
@@ -46,6 +46,8 @@ public sealed class VehicleController : ControllerBase
     ///        "model": "Ford-Mustang 2018",
     ///        "modelYear": "2023",
     ///        "brand": Ford,
+    ///        "referenceDocument" : asd-fcd-fgcdsas
+    ///        
     ///
     ///     }
     ///     

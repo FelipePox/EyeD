@@ -12,8 +12,9 @@ public sealed class VehiclesTests
             new PlateFakeData().InvalidPlate,
             new ModelFakeData().ModelValid,
             new BrandFakeData().BrandValido,
-            new ModelYearFakeData().ValidModelYear
-            );
+            new ModelYearFakeData().ValidModelYear,
+            new ReferenceDocumentFakeData().ValidReferenceDocumente
+            ) ;
 
         Assert.False(plate.IsValid);
     }
@@ -25,7 +26,8 @@ public sealed class VehiclesTests
             new PlateFakeData().ValidPlate,
             new ModelFakeData().ModelInvalid,
             new BrandFakeData().BrandValido,
-            new ModelYearFakeData().ValidModelYear
+            new ModelYearFakeData().ValidModelYear,
+          new ReferenceDocumentFakeData().ValidReferenceDocumente
             );
 
         Assert.False(plate.IsValid);
@@ -38,7 +40,8 @@ public sealed class VehiclesTests
             new PlateFakeData().ValidPlate,
             new ModelFakeData().ModelValid,
             new BrandFakeData().BrandInvalido,
-            new ModelYearFakeData().ValidModelYear
+            new ModelYearFakeData().ValidModelYear,
+            new ReferenceDocumentFakeData().ValidReferenceDocumente
             );
 
         Assert.False(plate.IsValid);
@@ -51,7 +54,8 @@ public sealed class VehiclesTests
             new PlateFakeData().ValidPlate,
             new ModelFakeData().ModelValid,
             new BrandFakeData().BrandValido,
-            new ModelYearFakeData().InvalidModelYear
+            new ModelYearFakeData().InvalidModelYear,
+          new ReferenceDocumentFakeData().ValidReferenceDocumente
             );
 
         Assert.False(plate.IsValid);
@@ -64,7 +68,8 @@ public sealed class VehiclesTests
             new PlateFakeData().ValidPlate,
             new ModelFakeData().ModelValid,
             new BrandFakeData().BrandValido,
-            new ModelYearFakeData().ValidModelYear
+            new ModelYearFakeData().ValidModelYear,
+           new ReferenceDocumentFakeData().ValidReferenceDocumente
             );
 
         Assert.True(plate.IsValid);

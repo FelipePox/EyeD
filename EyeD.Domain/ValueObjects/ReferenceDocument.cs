@@ -17,7 +17,7 @@ namespace EyeD.Domain.ValueObjects
          .Requires()
          .IsNotNullOrWhiteSpace(Texto, "ReferenceDocument.Texto", "O ReferenceDocument não pode ser vazia")
          .IsGreaterOrEqualsThan(Texto.Length, 10, "ReferenceDocument.Texto", "O ReferenceDocument não pode conter menos de 10 caracteres.")
-         .IsLowerOrEqualsThan(Texto.Length, 16, "ReferenceDocument.Texto", "O ReferenceDocument não pode conter mais de 16 caracteres.")
+         .IsLowerOrEqualsThan(Texto.Length, 15, "ReferenceDocument.Texto", "O ReferenceDocument não pode conter mais de 16 caracteres.")
            );
         }
         public string Texto { get; private set; }

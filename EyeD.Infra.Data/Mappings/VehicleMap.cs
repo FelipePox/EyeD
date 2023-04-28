@@ -47,6 +47,15 @@ namespace EyeD.Infra.Data.Mappings
 
                 nome.Ignore(n => n.Notifications);
             });
+
+            builder.OwnsOne(c => c.ReferenceDocument, refe =>
+            {
+                refe.Property(n => n.Texto)
+                .HasColumnName("ReferenceDocument")
+                .HasColumnType("varchar(15)");
+
+                refe.Ignore(n => n.Notifications);
+            });
         }
     }
 }

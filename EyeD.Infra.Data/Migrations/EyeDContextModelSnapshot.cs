@@ -188,6 +188,24 @@ namespace EyeD.Infra.Data.Migrations
 
             modelBuilder.Entity("EyeD.Domain.Entities.People", b =>
                 {
+                    b.OwnsOne("EyeD.Domain.ValueObjects.ReferenceDocument", "ReferenceDocument", b1 =>
+                        {
+                            b1.Property<Guid>("PeopleId")
+                                .HasColumnType("char(36)");
+
+                            b1.Property<string>("Texto")
+                                .IsRequired()
+                                .HasColumnType("varchar(16)")
+                                .HasColumnName("ReferenceDocument");
+
+                            b1.HasKey("PeopleId");
+
+                            b1.ToTable("Peoples");
+
+                            b1.WithOwner()
+                                .HasForeignKey("PeopleId");
+                        });
+
                     b.OwnsOne("EyeD.Domain.ValueObjects.ExternalImageId", "ExternalImageId", b1 =>
                         {
                             b1.Property<Guid>("PeopleId")
@@ -261,24 +279,6 @@ namespace EyeD.Infra.Data.Migrations
                                 .IsRequired()
                                 .HasColumnType("varchar(35)")
                                 .HasColumnName("ImageId");
-
-                            b1.HasKey("PeopleId");
-
-                            b1.ToTable("Peoples");
-
-                            b1.WithOwner()
-                                .HasForeignKey("PeopleId");
-                        });
-
-                    b.OwnsOne("EyeD.Domain.ValueObjects.ReferenceDocument", "ReferenceDocument", b1 =>
-                        {
-                            b1.Property<Guid>("PeopleId")
-                                .HasColumnType("char(36)");
-
-                            b1.Property<string>("Texto")
-                                .IsRequired()
-                                .HasColumnType("varchar(16)")
-                                .HasColumnName("ReferenceDocument");
 
                             b1.HasKey("PeopleId");
 
@@ -372,6 +372,24 @@ namespace EyeD.Infra.Data.Migrations
 
             modelBuilder.Entity("EyeD.Domain.Entities.Vehicles", b =>
                 {
+                    b.OwnsOne("EyeD.Domain.ValueObjects.ReferenceDocument", "ReferenceDocument", b1 =>
+                        {
+                            b1.Property<Guid>("VehiclesId")
+                                .HasColumnType("char(36)");
+
+                            b1.Property<string>("Texto")
+                                .IsRequired()
+                                .HasColumnType("varchar(15)")
+                                .HasColumnName("ReferenceDocument");
+
+                            b1.HasKey("VehiclesId");
+
+                            b1.ToTable("Vehicles");
+
+                            b1.WithOwner()
+                                .HasForeignKey("VehiclesId");
+                        });
+
                     b.OwnsOne("EyeD.Domain.ValueObjects.Brand", "Brand", b1 =>
                         {
                             b1.Property<Guid>("VehiclesId")
@@ -454,6 +472,9 @@ namespace EyeD.Infra.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Plate")
+                        .IsRequired();
+
+                    b.Navigation("ReferenceDocument")
                         .IsRequired();
                 });
 #pragma warning restore 612, 618

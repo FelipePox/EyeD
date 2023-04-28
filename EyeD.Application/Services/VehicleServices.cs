@@ -27,8 +27,11 @@ public sealed class VehicleServices : IVehicleServices
            new Plate(viewModel.Plate),
            new Model(viewModel.Model),
            new Brand(viewModel.Brand),
-           new ModelYear(viewModel.ModelYear)
-            );
+           new ModelYear(viewModel.ModelYear),
+           new ReferenceDocument(viewModel.ReferenceDocument)
+           );
+        
+            
 
         if (!veiculo.IsValid)
             throw new Exception("Os dados inseridos estão inválidos");
@@ -67,7 +70,8 @@ public sealed class VehicleServices : IVehicleServices
            new Plate(viewModel.Plate),
            new Model(viewModel.Model),
            new Brand(viewModel.Brand),
-           new ModelYear(viewModel.ModelYear)
+           new ModelYear(viewModel.ModelYear),
+          new ReferenceDocument(viewModel.ReferenceDocument)
             );
 
         if (!veiculoExistente.IsValid)

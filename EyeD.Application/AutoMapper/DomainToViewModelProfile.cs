@@ -30,7 +30,10 @@ namespace EyeD.Application.AutoMapper
               .ForMember(dest => dest.Plate, act => act.MapFrom(src => src.Plate.Texto))
               .ForMember(dest => dest.Model, act => act.MapFrom(src => src.Model.Texto))
               .ForMember(dest => dest.ModelYear, act => act.MapFrom(src => src.ModelYear.Texto))
-              .ForMember(dest => dest.Brand, act => act.MapFrom(src => src.Brand.Texto));
+              .ForMember(dest => dest.Brand, act => act.MapFrom(src => src.Brand.Texto))
+              .ForMember(dest => dest.ReferenceDocument, act => act.MapFrom(src => src.ReferenceDocument.Texto));
+
+
 
             CreateMap<HMDs, ResponseHMDViewModel>()
              .ForMember(dest => dest.SKU, act => act.MapFrom(src => src.SKU.Texto))

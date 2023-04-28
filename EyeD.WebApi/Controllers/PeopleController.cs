@@ -20,7 +20,7 @@ namespace EyeD.WebApi.Controllers
         /// Recupera todos os registros.
         /// </summary>
         [HttpGet]
-        [AllowAnonymous]
+        [Authorize]
         public async Task<IActionResult> GetAll()
         => Ok(await _peopleServices.GetAll());
 
@@ -30,7 +30,7 @@ namespace EyeD.WebApi.Controllers
         /// </summary>
         [HttpGet]
         [Route("{id}")]
-        [AllowAnonymous]
+        [Authorize]
         public async Task<IActionResult> GetById(Guid id)
          => Ok(await _peopleServices.GetById(id));
 
