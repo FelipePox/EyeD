@@ -13,16 +13,24 @@ public sealed class VehicleServices : IVehicleServices
     private readonly IMapper _mapper;
     private readonly IUnitOfWork _unitOfWork;
     private readonly IVehicleRepository _vehicleRepository;
+ 
 
     public VehicleServices(IVehicleRepository vehicleRepository,
         IMapper mapper, IUnitOfWork unitOfWork)
     {
         _mapper = mapper;
         _unitOfWork = unitOfWork;
-        _vehicleRepository = vehicleRepository;
+        _vehicleRepository = vehicleRepository;       
     }
+    
     public async Task<ResponseVehicleViewModel> Create(RequestVehicleViewModel viewModel)
-    {
+    {    
+
+        if(await _vehicleRepository.GetOneWhere(p => p.Plate.Texto == viewModel.Plate) is not null)
+        {
+            throw new Exception("A placa já está em uso");
+        }
+
         var veiculo = new Vehicles(
            new Plate(viewModel.Plate),
            new Model(viewModel.Model),
@@ -30,8 +38,6 @@ public sealed class VehicleServices : IVehicleServices
            new ModelYear(viewModel.ModelYear),
            new ReferenceDocument(viewModel.ReferenceDocument)
            );
-        
-            
 
         if (!veiculo.IsValid)
             throw new Exception("Os dados inseridos estão inválidos");
@@ -39,7 +45,7 @@ public sealed class VehicleServices : IVehicleServices
         var veiculoResponse = await _vehicleRepository.Insert(veiculo);
 
         if (await _unitOfWork.SaveChangesAsync() <= 0)
-            throw new Exception("Erro ao salvar o cardápio");
+            throw new Exception("Erro ao salvar o veículo");
 
         return _mapper.Map<ResponseVehicleViewModel>(veiculoResponse);
     }
@@ -49,7 +55,7 @@ public sealed class VehicleServices : IVehicleServices
         var restauranteExistente = await _vehicleRepository.GetOneWhere(v =>  v.Id == id);
 
         if (restauranteExistente is null)
-            throw new Exception("Restaurante inexistente");
+            throw new Exception("Veículo inexistente");
 
         await _vehicleRepository.Delete(restauranteExistente);
 
@@ -64,7 +70,7 @@ public sealed class VehicleServices : IVehicleServices
         var veiculoExistente = await _vehicleRepository.GetOneWhere(v => v.Id == id);
 
         if (veiculoExistente is null)
-            throw new Exception("Restaurante inexistente");
+            throw new Exception("Veículo inexistente");
 
           veiculoExistente.Update(
            new Plate(viewModel.Plate),

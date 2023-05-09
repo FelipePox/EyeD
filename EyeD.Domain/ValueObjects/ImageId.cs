@@ -16,7 +16,7 @@ public sealed class ImageId : ValueObject
        .Requires()
        .IsNotNullOrWhiteSpace(Texto, "ImageId.Texto", "O FaceId não pode ser vazia")
        .IsGreaterOrEqualsThan(Texto.Length, 10, "ImageId.Texto", "O FaceID não pode conter menos de 10 caracteres.")
-       .IsLowerOrEqualsThan(Texto.Length, 150, "ImageId.Texto", "O FaceUd não pode conter mais de 35 caracteres.")
+       .IsLowerOrEqualsThan(Texto.Length, 50, "ImageId.Texto", "O FaceUd não pode conter mais de 50 caracteres.")
          );
     }
     public string Texto { get; private set; }

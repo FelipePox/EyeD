@@ -288,6 +288,24 @@ namespace EyeD.Infra.Data.Migrations
                                 .HasForeignKey("PeopleId");
                         });
 
+                    b.OwnsOne("EyeD.Domain.ValueObjects.URL", "Imagem", b1 =>
+                        {
+                            b1.Property<Guid>("PeopleId")
+                                .HasColumnType("char(36)");
+
+                            b1.Property<string>("Texto")
+                                .IsRequired()
+                                .HasColumnType("varchar(200)")
+                                .HasColumnName("Imagem");
+
+                            b1.HasKey("PeopleId");
+
+                            b1.ToTable("Peoples");
+
+                            b1.WithOwner()
+                                .HasForeignKey("PeopleId");
+                        });
+
                     b.Navigation("ExternalImageId")
                         .IsRequired();
 
@@ -295,6 +313,9 @@ namespace EyeD.Infra.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("ImageId")
+                        .IsRequired();
+
+                    b.Navigation("Imagem")
                         .IsRequired();
 
                     b.Navigation("Name")

@@ -73,6 +73,15 @@ public sealed class PeopleMap : IEntityTypeConfiguration<People>
             nome.Ignore(n => n.Notifications);
         });
 
+        builder.OwnsOne(c => c.Imagem, image =>
+        {
+            image.Property(n => n.Texto)
+            .HasColumnName("Imagem")
+            .HasColumnType("varchar(200)");
+
+            image.Ignore(n => n.Notifications);
+        });
+
         builder.Ignore(n => n.Notifications);
     }
 }

@@ -49,6 +49,7 @@ namespace EyeD.WebApi.Controllers
         ///        "imageId": 001c6d844556,
         ///        "externalImageId": 001Bd63844d556,
         ///        "referenceDocument": document-23,   
+        ///        "imagem" : url(https://imagem.com)
         ///     }
         /// </remarks>
 

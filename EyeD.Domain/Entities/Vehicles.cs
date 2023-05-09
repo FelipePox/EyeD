@@ -39,5 +39,7 @@ namespace EyeD.Domain.Entities
             if (IsValid)
                 AtualizadoEm = DateTime.Now.ToLocalTime();
         }
+
+       
     }
 }

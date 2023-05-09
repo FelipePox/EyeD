@@ -20,7 +20,5 @@ namespace EyeD.Domain.ValueObjects
             );
         }
         public string Texto { get; private set; }
-
-
     }
 }
