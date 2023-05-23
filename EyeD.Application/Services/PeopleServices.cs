@@ -23,6 +23,16 @@ public class PeopleServices : IPeopleServices
 
     public async Task<ResponsePeopleViewModel> Create(RequestPeopleViewModel viewModel)
     {
+
+        if(await _peopleRepository.GetOneWhere(i => i.ImageId.Texto == viewModel.ImageId) is not null)
+        {
+            throw new Exception("ImageId já existente no banco de dados!");
+        }
+        if(await _peopleRepository.GetOneWhere(f => f.FaceId.Texto == viewModel.FaceId) is not null)
+        {
+            throw new Exception("FaceId já existente no banco de dados!");
+
+        }
         var people = new People(
             new FullName(viewModel.FirstName, viewModel.SecondName, viewModel.ThirdName),
             new FaceId(viewModel.FaceId),

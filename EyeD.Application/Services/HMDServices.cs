@@ -22,6 +22,11 @@ public sealed class HMDServices : IHMDServices
     }
     public async Task<ResponseHMDViewModel> Create(RequestHMDViewModel viewModel)
     {
+        if(await _hmdRepository.GetOneWhere(m => m.MacAddress.Texto == viewModel.MacAddress) is not null)
+        {
+            throw new Exception("O MacAddress é um valor único, confira se já não existe outro com o mesmo valor!");
+        }
+
         var hmd = new HMDs(
             new Description(viewModel.Description),
             new IPV4(viewModel.IPV4),

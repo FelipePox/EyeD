@@ -25,7 +25,8 @@ public sealed class People : Entity
     public ReferenceDocument ReferenceDocument { get; private set; }
     public URL Imagem { get; private set; }
 
-    public void Update(FullName name,
+    public void Update(
+        FullName name,
         FaceId faceId, 
         ImageId imageId, 
         ExternalImageId externalImageId,

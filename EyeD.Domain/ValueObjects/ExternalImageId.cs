@@ -12,7 +12,7 @@ namespace EyeD.Domain.ValueObjects
         {
             Texto = texto;
 
-            AddNotifications(new Contract<ImageId>()
+            AddNotifications(new Contract<ExternalImageId>()
            .Requires()
            .IsNotNullOrWhiteSpace(Texto, "ExternalImageId.Texto", "O ExternalImageId não pode ser vazia")
            .IsGreaterOrEqualsThan(Texto.Length, 10, "ExternalImageId.Texto", "O ExternalImageId não pode conter menos de 10 caracteres.")

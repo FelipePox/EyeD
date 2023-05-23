@@ -42,7 +42,7 @@ public sealed class PeopleMap : IEntityTypeConfiguration<People>
         {
             nome.Property(n => n.Texto)
             .HasColumnName("FaceId")
-            .HasColumnType("varchar(35)");
+            .HasColumnType("varchar(50)");
 
             nome.Ignore(n => n.Notifications);
         });
@@ -51,7 +51,7 @@ public sealed class PeopleMap : IEntityTypeConfiguration<People>
         {
             nome.Property(n => n.Texto)
             .HasColumnName("ImageId")
-            .HasColumnType("varchar(35)");
+            .HasColumnType("varchar(50)");
 
             nome.Ignore(n => n.Notifications);
         });
@@ -59,7 +59,7 @@ public sealed class PeopleMap : IEntityTypeConfiguration<People>
         {
             nome.Property(n => n.Texto)
             .HasColumnName("ExternalImageId")
-            .HasColumnType("varchar(100)");
+            .HasColumnType("varchar(50)");
 
             nome.Ignore(n => n.Notifications);
         });

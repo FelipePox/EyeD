@@ -28,7 +28,7 @@ public sealed class VehicleServices : IVehicleServices
 
         if(await _vehicleRepository.GetOneWhere(p => p.Plate.Texto == viewModel.Plate) is not null)
         {
-            throw new Exception("A placa já está em uso");
+            throw new Exception("A placa já está cadastrada");
         }
 
         var veiculo = new Vehicles(

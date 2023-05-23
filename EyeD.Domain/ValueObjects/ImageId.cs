@@ -14,9 +14,9 @@ public sealed class ImageId : ValueObject
 
         AddNotifications(new Contract<ImageId>()
        .Requires()
-       .IsNotNullOrWhiteSpace(Texto, "ImageId.Texto", "O FaceId não pode ser vazia")
-       .IsGreaterOrEqualsThan(Texto.Length, 10, "ImageId.Texto", "O FaceID não pode conter menos de 10 caracteres.")
-       .IsLowerOrEqualsThan(Texto.Length, 50, "ImageId.Texto", "O FaceUd não pode conter mais de 50 caracteres.")
+       .IsNotNullOrWhiteSpace(Texto, "ImageId.Texto", "O ImageId não pode ser vazia")
+       .IsGreaterOrEqualsThan(Texto.Length, 10, "ImageId.Texto", "O ImageId não pode conter menos de 10 caracteres.")
+       .IsLowerOrEqualsThan(Texto.Length, 36, "ImageId.Texto", "O ImageId não pode conter mais de 36 caracteres.")
          );
     }
     public string Texto { get; private set; }
