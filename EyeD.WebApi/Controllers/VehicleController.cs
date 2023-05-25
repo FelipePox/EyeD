@@ -31,7 +31,17 @@ public sealed class VehicleController : ControllerBase
     [Route("{id}")]
     [Authorize]
     public async Task<IActionResult> GetById(Guid id)
-       => Ok(await _vehicleServices.GetById(id));
+    {
+        try
+        {
+            return Ok(await _vehicleServices.GetById(id));
+        }
+        catch(Exception ex) 
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+      
 
 
     /// <summary>

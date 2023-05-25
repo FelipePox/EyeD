@@ -33,8 +33,16 @@ namespace EyeD.WebApi.Controllers
         [Route("{id}")]
         [Authorize]
         public async Task<IActionResult> GetById(Guid id)
-          => Ok(await _hmdServices.GetById(id));
-
+        {
+            try
+            {
+                return Ok(await _hmdServices.GetById(id));
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
         /// <summary>
         /// Registrar um novo HMD.

@@ -43,6 +43,10 @@ namespace EyeD.WebApi.Controllers
             }
         }
 
+
+        /// <summary>
+        /// Recupera registro de pessoa pela FaceId.
+        /// </summary>
         [HttpGet]
         [Route("faces/{faceId}")]
         [AllowAnonymous]
