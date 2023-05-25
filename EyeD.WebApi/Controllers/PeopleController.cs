@@ -32,8 +32,31 @@ namespace EyeD.WebApi.Controllers
         [Route("{id}")]
         [Authorize]
         public async Task<IActionResult> GetById(Guid id)
-         => Ok(await _peopleServices.GetById(id));
+        {
+            try
+            {
+                return Ok(await _peopleServices.GetById(id));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
+        [HttpGet]
+        [Route("faces/{faceId}")]
+        [AllowAnonymous]
+        public async Task<IActionResult> GetByFaceId(string faceId)
+        {
+            try
+            {
+                return Ok(await _peopleServices.GetByFaceId(faceId));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
         /// <summary>
         /// Registrar uma nova Pessoa.
         /// </summary>

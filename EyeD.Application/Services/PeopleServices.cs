@@ -99,6 +99,17 @@ public class PeopleServices : IPeopleServices
       => _mapper.Map<List<ResponsePeopleViewModel>>
             (await  _peopleRepository.GetAll());
 
+    public async Task<ResponsePeopleViewModel> GetByFaceId(string faceId)
+    {
+        if (faceId == "")
+            throw new Exception("Id inválido.");
+
+        var faceExistente = await _peopleRepository.GetOneWhere(p => p.FaceId.Texto == faceId);
+        return faceExistente is null 
+            ? throw new Exception("Face inexistente.") 
+            : _mapper.Map<ResponsePeopleViewModel>(faceExistente);
+    }
+
     public async Task<ResponsePeopleViewModel> GetById(Guid id)
     {
         if (id == Guid.Empty)
@@ -106,10 +117,8 @@ public class PeopleServices : IPeopleServices
 
         var peopleExistente = await _peopleRepository.GetOneWhere(p => p.Id == id);
 
-        if (peopleExistente is null)
-            throw new Exception("Pessoa inexistente.");
-
-        return _mapper.Map<ResponsePeopleViewModel>(peopleExistente);
-
+        return peopleExistente is null 
+            ? throw new Exception("Pessoa inexistente.") 
+            : _mapper.Map<ResponsePeopleViewModel>(peopleExistente);
     }
 }

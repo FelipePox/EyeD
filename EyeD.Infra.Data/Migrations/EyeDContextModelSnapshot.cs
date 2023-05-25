@@ -213,7 +213,7 @@ namespace EyeD.Infra.Data.Migrations
 
                             b1.Property<string>("Texto")
                                 .IsRequired()
-                                .HasColumnType("varchar(50)")
+                                .HasColumnType("varchar(55)")
                                 .HasColumnName("ExternalImageId");
 
                             b1.HasKey("PeopleId");
@@ -231,7 +231,7 @@ namespace EyeD.Infra.Data.Migrations
 
                             b1.Property<string>("Texto")
                                 .IsRequired()
-                                .HasColumnType("varchar(50)")
+                                .HasColumnType("varchar(56)")
                                 .HasColumnName("FaceId");
 
                             b1.HasKey("PeopleId");
@@ -277,7 +277,7 @@ namespace EyeD.Infra.Data.Migrations
 
                             b1.Property<string>("Texto")
                                 .IsRequired()
-                                .HasColumnType("varchar(50)")
+                                .HasColumnType("varchar(55)")
                                 .HasColumnName("ImageId");
 
                             b1.HasKey("PeopleId");

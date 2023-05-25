@@ -6,6 +6,7 @@ namespace EyeD.Application.Interfaces
     {
         Task<List<ResponsePeopleViewModel>> GetAll();
         Task<ResponsePeopleViewModel> GetById(Guid id);
+        Task<ResponsePeopleViewModel> GetByFaceId(string faceId);
         Task<ResponsePeopleViewModel> Create(RequestPeopleViewModel viewModel);
         Task<ResponsePeopleViewModel> Edit(Guid id, RequestPeopleViewModel viewModel);
         Task<bool> Delete(Guid id);
