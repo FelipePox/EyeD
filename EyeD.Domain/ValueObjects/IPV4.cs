@@ -14,7 +14,7 @@ namespace EyeD.Domain.ValueObjects
            .Requires()
            .IsNotNullOrWhiteSpace(Texto, "IPV4.Texto", "O IPV4 não pode ser vazio")
            .IsGreaterOrEqualsThan(Texto.Length, 5, "IPV4.Texto", "O IPV4 não pode conter menos de 5 caracteres.")
-           .IsLowerOrEqualsThan(Texto.Length, 15, "IPV4.Texto", "O IPV4 não pode conter mais de 15 caracteres.")
+           .IsLowerOrEqualsThan(Texto.Length, 20, "IPV4.Texto", "O IPV4 não pode conter mais de 20 caracteres.")
          );
 
         }

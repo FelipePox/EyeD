@@ -15,7 +15,7 @@ namespace EyeD.Domain.ValueObjects
             AddNotifications(new Contract<Model>()
            .Requires()
            .IsNotNullOrWhiteSpace(Texto, "Model.Texto", "O modelo do carro não pode ser vazia")
-           .IsGreaterOrEqualsThan(Texto.Length, 5, "Model.Texto", "O modelo do carro não pode conter menos de 5 caracteres.")
+           .IsGreaterOrEqualsThan(Texto.Length, 2, "Model.Texto", "O modelo do carro não pode conter menos de 2 caracteres.")
            .IsLowerOrEqualsThan(Texto.Length, 60, "Model.Texto", "O modelo do carro não pode conter mais de 60 caracteres.")
             );
         }

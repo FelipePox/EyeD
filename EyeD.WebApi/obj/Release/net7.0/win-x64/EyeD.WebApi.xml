@@ -52,6 +52,11 @@
             Recupera registro pelo ID.
             </summary>
         </member>
+        <member name="M:EyeD.WebApi.Controllers.PeopleController.GetByFaceId(System.String)">
+            <summary>
+            Recupera registro de pessoa pela FaceId.
+            </summary>
+        </member>
         <member name="M:EyeD.WebApi.Controllers.PeopleController.Post(EyeD.Application.ViewModels.Peoples.RequestPeopleViewModel)">
             <summary>
             Registrar uma nova Pessoa.

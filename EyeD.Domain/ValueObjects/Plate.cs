@@ -15,7 +15,7 @@ namespace EyeD.Domain.ValueObjects
             AddNotifications(new Contract<Plate>()
             .Requires()
             .IsNotNullOrWhiteSpace(Texto, "Plate.Texto", "A placa  não pode ser vazia")
-            .IsGreaterOrEqualsThan(Texto.Length, 2, "Plate.Texto", "A placa não pode conter menos de 2 caracteres.")
+            .IsGreaterOrEqualsThan(Texto.Length, 7, "Plate.Texto", "A placa não pode conter menos de 7 caracteres.")
             .IsLowerOrEqualsThan(Texto.Length, 7, "Plate.Texto", "A placa não pode conter mais de 7 caracteres.")
             );
         }

@@ -14,7 +14,7 @@ namespace EyeD.Domain.ValueObjects
            .Requires()
            .IsNotNullOrWhiteSpace(Texto, "SKU.Texto", "O SKU não pode ser vazio")
            .IsGreaterOrEqualsThan(Texto.Length, 5, "SKU.Texto", "O SKU não pode conter menos de 5 caracteres.")
-           .IsLowerOrEqualsThan(Texto.Length, 15, "SKU.Texto", " o SKU não pode conter mais de 15 caracteres.")
+           .IsLowerOrEqualsThan(Texto.Length, 25, "SKU.Texto", " o SKU não pode conter mais de 25 caracteres.")
           );
         }
 

@@ -55,7 +55,7 @@ public sealed class VehicleController : ControllerBase
     ///        "plate": "BRA2E19",
     ///        "model": "Ford-Mustang 2018",
     ///        "modelYear": "2023",
-    ///        "brand": Ford,
+    ///        "brand": "Ford",
     ///        "referenceDocument" : asd-fcd-fgcdsas
     ///        
     ///
