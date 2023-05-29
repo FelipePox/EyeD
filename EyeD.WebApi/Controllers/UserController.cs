@@ -8,7 +8,6 @@ namespace EyeD.WebApi.Controllers;
 
 [ApiController]
 [Route("users")]
-[AllowAnonymous]
 public sealed class UserController : ControllerBase
 {
     private readonly IUserServices _userServices;
