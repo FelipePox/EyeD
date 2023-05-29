@@ -91,6 +91,40 @@
             Login de usuário para poder ter acesso completo das funcionalidades da API.
             </summary>
         </member>
+        <member name="M:EyeD.WebApi.Controllers.UserController.GetAll">
+            <summary>
+            Recupera todos os registros.
+            </summary>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.UserController.GetById(System.Guid)">
+            <summary>
+            Recupera registro pelo ID.
+            </summary>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.UserController.Post(EyeD.Application.ViewModels.Users.RequestUserViewModel)">
+            <summary>
+            Registrar um Novo usuário.
+            </summary>
+            <remarks>
+            Exemplo de payload:
+            
+                {
+                   "Nome": "Felipe",
+                   "Senha": "Senha123.",
+                   "email": "algumemail@gmail.com"
+             }   
+            </remarks>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.UserController.Put(EyeD.Application.ViewModels.Users.RequestUserViewModel,System.Guid)">
+            <summary>
+            Editar Pessoa pelo seu ID.
+            </summary>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.UserController.Delete(System.Guid)">
+            <summary>
+            Deletar Pessoa pelo ID.
+            </summary>
+        </member>
         <member name="M:EyeD.WebApi.Controllers.VehicleController.GetAll">
             <summary>
             Recupera todos os registros.
@@ -112,7 +146,7 @@
                     "plate": "BRA2E19",
                     "model": "Ford-Mustang 2018",
                     "modelYear": "2023",
-                    "brand": Ford,
+                    "brand": "Ford",
                     "referenceDocument" : asd-fcd-fgcdsas
                     
             

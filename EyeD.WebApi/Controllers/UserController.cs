@@ -1,6 +1,4 @@
 ﻿using EyeD.Application.Interfaces;
-using EyeD.Application.Services;
-using EyeD.Application.ViewModels.Peoples;
 using EyeD.Application.ViewModels.User;
 using EyeD.Application.ViewModels.Users;
 using Microsoft.AspNetCore.Authorization;
@@ -40,7 +38,7 @@ public sealed class UserController : ControllerBase
     /// Recupera todos os registros.
     /// </summary>
     [HttpGet]
-    [AllowAnonymous]
+    [Authorize]
     public async Task<IActionResult> GetAll()
     => Ok(await _userServices.GetAll());
 
@@ -96,7 +94,7 @@ public sealed class UserController : ControllerBase
     /// </summary>
     [HttpPut]
     [Route("{id}")]
-    [AllowAnonymous]
+    [Authorize]
     public async Task<IActionResult> Put([FromBody] RequestUserViewModel viewModel, Guid id)
     {
         try
