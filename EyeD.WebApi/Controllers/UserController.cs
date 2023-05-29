@@ -40,7 +40,7 @@ public sealed class UserController : ControllerBase
     /// Recupera todos os registros.
     /// </summary>
     [HttpGet]
-    [Authorize]
+    [AllowAnonymous]
     public async Task<IActionResult> GetAll()
     => Ok(await _userServices.GetAll());
 
@@ -84,6 +84,45 @@ public sealed class UserController : ControllerBase
         try
         {
             return Ok(await _userServices.Create(viewModel));
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    /// <summary>
+    /// Editar Pessoa pelo seu ID.
+    /// </summary>
+    [HttpPut]
+    [Route("{id}")]
+    [AllowAnonymous]
+    public async Task<IActionResult> Put([FromBody] RequestUserViewModel viewModel, Guid id)
+    {
+        try
+        {
+            return Ok(await _userServices.Edit(id, viewModel));
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    /// <summary>
+    /// Deletar Pessoa pelo ID.
+    /// </summary>
+    [HttpDelete]
+    [Route("{id}")]
+    [Authorize]
+    public async Task<IActionResult> Delete(Guid id)
+    {
+        try
+        {
+            if (await _userServices.Delete(id))
+                return Ok("User deletado com sucesso.");
+
+            return BadRequest("Ocorreu um erro ao deletar o User.");
         }
         catch (Exception ex)
         {

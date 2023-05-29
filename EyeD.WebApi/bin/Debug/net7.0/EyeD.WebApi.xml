@@ -115,6 +115,16 @@
              }   
             </remarks>
         </member>
+        <member name="M:EyeD.WebApi.Controllers.UserController.Put(EyeD.Application.ViewModels.Users.RequestUserViewModel,System.Guid)">
+            <summary>
+            Editar Pessoa pelo seu ID.
+            </summary>
+        </member>
+        <member name="M:EyeD.WebApi.Controllers.UserController.Delete(System.Guid)">
+            <summary>
+            Deletar Pessoa pelo ID.
+            </summary>
+        </member>
         <member name="M:EyeD.WebApi.Controllers.VehicleController.GetAll">
             <summary>
             Recupera todos os registros.

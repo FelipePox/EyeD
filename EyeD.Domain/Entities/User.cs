@@ -19,5 +19,19 @@ namespace EyeD.Domain.Entities
         public Name Nome { get; private set; }
         public Email Email { get; private set; }   
         public Password Password { get; private set; }
+
+
+        public void Update(Name nome, Email email, Password password)
+        {
+            Nome = nome;
+            Email = email;
+            Password = password;
+           
+
+            AddNotifications(Nome,Email,Password);
+
+            if (IsValid)
+                AtualizadoEm = DateTime.Now.ToLocalTime();
+        }
     }
 }

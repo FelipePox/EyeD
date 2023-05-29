@@ -49,14 +49,36 @@ public sealed class UserServices : IUserServices
         return _mapper.Map<ResponseUserViewModel>(userResponse);
     }
 
-    public Task<bool> Delete(Guid id)
+    public async Task<bool> Delete(Guid id)
     {
-        throw new NotImplementedException();
+        var userExistente = await _userRepository.GetOneWhere(p => p.Id == id) ?? throw new Exception("User inexistente.");
+        await _userRepository.Delete(userExistente);
+
+        if (await _unitOfWork.SaveChangesAsync() <= 0)
+            throw new Exception("Erro ao salvar apagar User.");
+        return true;
     }
 
-    public Task<ResponseUserViewModel> Edit(Guid id, RequestUserViewModel viewModel)
+    public async Task<ResponseUserViewModel> Edit(Guid id, RequestUserViewModel viewModel)
     {
-        throw new NotImplementedException();
+        var userExistente = await _userRepository.GetOneWhere(p => p.Id == id) ?? throw new Exception("User inexistente.");
+
+         userExistente.Update(
+            new Name(viewModel.Nome),
+            new Email(viewModel.Email),
+            new Password(viewModel.Senha)
+            );
+
+        if (!userExistente.IsValid)
+            throw new Exception("Os dados inseridos estão inválidos.");
+
+        var userResponse = await _userRepository.Update(userExistente);
+
+        if (await _unitOfWork.SaveChangesAsync() <= 0)
+            throw new Exception("Erro ao salvar as alterações em User.");
+
+        return _mapper.Map<ResponseUserViewModel>(userResponse);
+
     }
 
     public async Task<List<ResponseUserViewModel>> GetAll()

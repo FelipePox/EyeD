@@ -55,14 +55,11 @@ public class PeopleServices : IPeopleServices
 
     public async Task<bool> Delete(Guid id)
     {
-        var peopleExistente = await _peopleRepository.GetOneWhere(p => p.Id == id);
-        if (peopleExistente is null)
-            throw new Exception("Pessoa inexistente.");
-
+        var peopleExistente = await _peopleRepository.GetOneWhere(p => p.Id == id) ?? throw new Exception("Pessoa inexistente.");
         await _peopleRepository.Delete(peopleExistente);
 
         if (await _unitOfWork.SaveChangesAsync() <= 0)
-            throw new Exception("Erro ao salvar as alterações em Pessoa.");
+            throw new Exception("Erro ao salvar apagar Pessoa.");
 
         return true;
 
@@ -70,12 +67,9 @@ public class PeopleServices : IPeopleServices
 
     public async Task<ResponsePeopleViewModel> Edit(Guid id, RequestPeopleViewModel viewModel)
     {
-        var peopleExistente = await _peopleRepository.GetOneWhere(p => p.Id == id);
+        var peopleExistente = await _peopleRepository.GetOneWhere(p => p.Id == id) ?? throw new Exception("Pessoa inexistente.");
 
-        if (peopleExistente is null)
-            throw new Exception("Pessoa inexistente.");
-
-         peopleExistente.Update(
+        peopleExistente.Update(
            new FullName(viewModel.FirstName, viewModel.SecondName, viewModel.ThirdName),
            new FaceId(viewModel.FaceId),
            new ImageId(viewModel.ImageId),
