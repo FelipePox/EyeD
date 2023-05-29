@@ -2,6 +2,7 @@
 using EyeD.Application.ViewModels.HMDs;
 using EyeD.Application.ViewModels.Peoples;
 using EyeD.Application.ViewModels.User;
+using EyeD.Application.ViewModels.Users;
 using EyeD.Application.ViewModels.Vehicles;
 using EyeD.Domain.Entities;
 
@@ -15,6 +16,11 @@ public sealed class DomainToViewModelProfile : Profile
             .ForMember(dest => dest.Nome, act => act.MapFrom(src => src.Nome.Texto))
             .ForMember(dest => dest.Email, act => act.MapFrom(src => src.Email.Endereco))
             .ForMember(dest => dest.Senha, act => act.MapFrom(src => src.Password.Texto));
+
+        CreateMap<User, ResponseUserViewModel>()
+          .ForMember(dest => dest.Nome, act => act.MapFrom(src => src.Nome.Texto))
+          .ForMember(dest => dest.Email, act => act.MapFrom(src => src.Email.Endereco))
+          .ForMember(dest => dest.Senha, act => act.MapFrom(src => src.Password.Texto));
 
         CreateMap<People, ResponsePeopleViewModel>()
            .ForMember(dest => dest.FirstName, act => act.MapFrom(src => src.Name.PrimeiroNome))
