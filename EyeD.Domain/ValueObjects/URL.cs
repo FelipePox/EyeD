@@ -1,6 +1,5 @@
 ﻿using EyeD.Domain.Core.ValueObjects;
 using Flunt.Validations;
-using System;
 
 namespace EyeD.Domain.ValueObjects;
 

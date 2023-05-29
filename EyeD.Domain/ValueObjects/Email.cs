@@ -1,4 +1,4 @@
-﻿    using EyeD.Domain.Core.ValueObjects;
+﻿using EyeD.Domain.Core.ValueObjects;
 using Flunt.Validations;
 
 namespace EyeD.Domain.ValueObjects;

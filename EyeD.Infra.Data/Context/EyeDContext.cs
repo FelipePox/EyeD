@@ -2,7 +2,6 @@
 using EyeD.Infra.Data.Extensions;
 using Flunt.Notifications;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure;
 
 namespace EyeD.Infra.Data.Context;
 

@@ -7,9 +7,7 @@ namespace EyeD.Domain.ValueObjects;
 public sealed class Password : ValueObject
 {
     public Password()
-    {
-        
-    }
+    {}
     public Password(string texto)
     {
         Texto = texto;
@@ -31,7 +29,6 @@ public sealed class Password : ValueObject
             Texto.HasNumber() &&
             Texto.HasSpecialChar())
             return true;
-
         return false;
     }
 }

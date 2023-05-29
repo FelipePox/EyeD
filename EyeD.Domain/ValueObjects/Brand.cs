@@ -10,7 +10,6 @@ namespace EyeD.Domain.ValueObjects
 
         public Brand(string texto)
         {
-
             Texto = texto;
 
             AddNotifications(new Contract<Brand>()
