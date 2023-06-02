@@ -13,8 +13,8 @@ public sealed class Description : ValueObject
         AddNotifications(new Contract<Description>()
         .Requires()
         .IsNotNullOrWhiteSpace(Texto, "Description.Texto", "A descrição não pode ser vazia")
-        .IsGreaterOrEqualsThan(Texto.Length, 10, "Description.Texto", "A descrição não pode conter menos de 10 caracteres.")
-        .IsLowerOrEqualsThan(Texto.Length, 120, "Description.Texto", "A descrição não pode conter mais de 120 caracteres.")
+        .IsGreaterOrEqualsThan(Texto.Length, 2, "Description.Texto", "A descrição não pode conter menos de 2 caracteres.")
+        .IsLowerOrEqualsThan(Texto.Length, 200, "Description.Texto", "A descrição não pode conter mais de 200 caracteres.")
         );
     }
 

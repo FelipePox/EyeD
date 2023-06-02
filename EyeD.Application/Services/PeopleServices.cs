@@ -39,7 +39,9 @@ public class PeopleServices : IPeopleServices
             new ImageId(viewModel.ImageId),
             new ExternalImageId(viewModel.ExternalImageId),
             new ReferenceDocument(viewModel.ReferenceDocument),
-            new URL(viewModel.Imagem)
+            new URL(viewModel.Imagem),
+            new Description(viewModel.Motivo)
+
             );
 
         if (!people.IsValid)
@@ -75,7 +77,8 @@ public class PeopleServices : IPeopleServices
            new ImageId(viewModel.ImageId),
            new ExternalImageId(viewModel.ExternalImageId),
            new ReferenceDocument(viewModel.ReferenceDocument),
-           new URL(viewModel.Imagem)
+           new URL(viewModel.Imagem),
+           new Description(viewModel.Motivo)
            );
 
         if (!peopleExistente.IsValid)

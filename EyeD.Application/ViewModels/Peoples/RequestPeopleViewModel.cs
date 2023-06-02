@@ -8,5 +8,7 @@
         public string ExternalImageId { get; set; }
         public string ReferenceDocument { get; set; }
         public string Imagem { get; set; }
+        public string Motivo { get; set; }
+
     }
 }

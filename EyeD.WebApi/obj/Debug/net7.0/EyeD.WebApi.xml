@@ -66,13 +66,12 @@
             
                 {
                    "firstName": "Felipe",
-                   "secondName": "Rocha",
-                   "thirdName": "Cardoso",
                    "faceId": 001B63844556,
                    "imageId": 001c6d844556,
                    "externalImageId": 001Bd63844d556,
                    "referenceDocument": document-23,   
-                   "imagem" : url(https://imagem.com)
+                   "imagem" : url(https://imagem.com),
+                   "motivo" : "Procurado por assasinato"
                 }
             </remarks>
         </member>

@@ -29,7 +29,9 @@ public sealed class DomainToViewModelProfile : Profile
            .ForMember(dest => dest.ExternalImageId, act => act.MapFrom(src => src.ExternalImageId.Texto))
            .ForMember(dest => dest.ImageId, act => act.MapFrom(src => src.ImageId.Texto))
            .ForMember(dest => dest.ReferenceDocument, act => act.MapFrom(src => src.ReferenceDocument.Texto))
-           .ForMember(dest => dest.Imagem, act => act.MapFrom(src => src.Imagem.Texto));
+           .ForMember(dest => dest.Imagem, act => act.MapFrom(src => src.Imagem.Texto))
+           .ForMember(dest => dest.Motivo, act => act.MapFrom(src => src.Motivo.Texto));
+
 
         CreateMap<Vehicles, ResponseVehicleViewModel>()
           .ForMember(dest => dest.Plate, act => act.MapFrom(src => src.Plate.Texto))

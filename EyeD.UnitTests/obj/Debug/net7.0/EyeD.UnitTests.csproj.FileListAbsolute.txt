@@ -1,9 +1,4 @@
 C:\GOIT\EyeD\EyeD\EyeD.UnitTests\bin\Debug\net7.0\CoverletSourceRootsMapping
-C:\GOIT\EyeD\EyeD\EyeD.UnitTests\obj\Debug\net7.0\EyeD.UnitTests.csproj.AssemblyReference.cache
-C:\GOIT\EyeD\EyeD\EyeD.UnitTests\obj\Debug\net7.0\EyeD.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
-C:\GOIT\EyeD\EyeD\EyeD.UnitTests\obj\Debug\net7.0\EyeD.UnitTests.AssemblyInfoInputs.cache
-C:\GOIT\EyeD\EyeD\EyeD.UnitTests\obj\Debug\net7.0\EyeD.UnitTests.AssemblyInfo.cs
-C:\GOIT\EyeD\EyeD\EyeD.UnitTests\obj\Debug\net7.0\EyeD.UnitTests.csproj.CoreCompileInputs.cache
 C:\GOIT\EyeD\EyeD\EyeD.UnitTests\bin\Debug\net7.0\testhost.dll
 C:\GOIT\EyeD\EyeD\EyeD.UnitTests\bin\Debug\net7.0\testhost.exe
 C:\GOIT\EyeD\EyeD\EyeD.UnitTests\bin\Debug\net7.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
@@ -114,6 +109,11 @@ C:\GOIT\EyeD\EyeD\EyeD.UnitTests\bin\Debug\net7.0\EyeD.Domain.Core.dll
 C:\GOIT\EyeD\EyeD\EyeD.UnitTests\bin\Debug\net7.0\EyeD.Domain.dll
 C:\GOIT\EyeD\EyeD\EyeD.UnitTests\bin\Debug\net7.0\EyeD.Domain.pdb
 C:\GOIT\EyeD\EyeD\EyeD.UnitTests\bin\Debug\net7.0\EyeD.Domain.Core.pdb
+C:\GOIT\EyeD\EyeD\EyeD.UnitTests\obj\Debug\net7.0\EyeD.UnitTests.csproj.AssemblyReference.cache
+C:\GOIT\EyeD\EyeD\EyeD.UnitTests\obj\Debug\net7.0\EyeD.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\GOIT\EyeD\EyeD\EyeD.UnitTests\obj\Debug\net7.0\EyeD.UnitTests.AssemblyInfoInputs.cache
+C:\GOIT\EyeD\EyeD\EyeD.UnitTests\obj\Debug\net7.0\EyeD.UnitTests.AssemblyInfo.cs
+C:\GOIT\EyeD\EyeD\EyeD.UnitTests\obj\Debug\net7.0\EyeD.UnitTests.csproj.CoreCompileInputs.cache
 C:\GOIT\EyeD\EyeD\EyeD.UnitTests\obj\Debug\net7.0\EyeD.UnitTests.csproj.CopyComplete
 C:\GOIT\EyeD\EyeD\EyeD.UnitTests\obj\Debug\net7.0\EyeD.UnitTests.dll
 C:\GOIT\EyeD\EyeD\EyeD.UnitTests\obj\Debug\net7.0\refint\EyeD.UnitTests.dll
