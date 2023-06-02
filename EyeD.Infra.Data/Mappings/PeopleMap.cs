@@ -20,23 +20,6 @@ public sealed class PeopleMap : IEntityTypeConfiguration<People>
             nome.Ignore(n => n.Notifications);
         });
 
-        builder.OwnsOne(c => c.Name, nome =>
-        {
-            nome.Property(n => n.SegundoNome)
-            .HasColumnName("SecondName")
-            .HasColumnType("varchar(60)");
-
-            nome.Ignore(n => n.Notifications);
-        });
-
-        builder.OwnsOne(c => c.Name, nome =>
-        {
-            nome.Property(n => n.TerceiroNome)
-            .HasColumnName("ThirdName")
-            .HasColumnType("varchar(20)");
-
-            nome.Ignore(n => n.Notifications);
-        });
 
         builder.OwnsOne(c => c.FaceId, nome =>
         {

@@ -18,12 +18,12 @@ public sealed class People : Entity
         Imagem = imagem;
         AddNotifications(Name, FaceId, ImageId, ExternalImageId, ReferenceDocument, Imagem);
     }
-    public FullName Name { get; private set; }
-    public FaceId FaceId { get; private set; }
-    public ImageId ImageId { get; private set; }
-    public ExternalImageId ExternalImageId { get; private set; }
-    public ReferenceDocument ReferenceDocument { get; private set; }
-    public URL Imagem { get; private set; }
+    public FullName Name { get; private set; } = null!;
+    public FaceId FaceId { get; private set; } = null!;
+    public ImageId ImageId { get; private set; } = null!;
+    public ExternalImageId ExternalImageId { get; private set; } = null!;
+    public ReferenceDocument ReferenceDocument { get; private set; } = null!;
+    public URL Imagem { get; private set; } = null!;
 
     public void Update(
         FullName name,

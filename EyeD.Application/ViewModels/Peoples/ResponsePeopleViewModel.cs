@@ -4,8 +4,6 @@
     {
         public Guid Id { get; set; }
         public string FirstName { get; set; } = null!;
-        public string SecondName { get; set; } = null!;
-        public string ThirdName { get; set; } = null!;
         public string FaceId { get; set; } = null!;
         public string ImageId { get; set; } = null!;
         public string ExternalImageId { get; set; } = null!;

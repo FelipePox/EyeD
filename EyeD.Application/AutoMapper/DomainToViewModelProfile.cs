@@ -24,8 +24,6 @@ public sealed class DomainToViewModelProfile : Profile
 
         CreateMap<People, ResponsePeopleViewModel>()
            .ForMember(dest => dest.FirstName, act => act.MapFrom(src => src.Name.PrimeiroNome))
-           .ForMember(dest => dest.SecondName, act => act.MapFrom(src => src.Name.SegundoNome))
-           .ForMember(dest => dest.ThirdName, act => act.MapFrom(src => src.Name.TerceiroNome))
            .ForMember(dest => dest.FaceId, act => act.MapFrom(src => src.FaceId.Texto))
            .ForMember(dest => dest.ImageId, act => act.MapFrom(src => src.ImageId.Texto))
            .ForMember(dest => dest.ExternalImageId, act => act.MapFrom(src => src.ExternalImageId.Texto))

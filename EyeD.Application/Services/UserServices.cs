@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using EyeD.Application.Auth;
 using EyeD.Application.Interfaces;
-using EyeD.Application.ViewModels.Peoples;
 using EyeD.Application.ViewModels.User;
 using EyeD.Application.ViewModels.Users;
 using EyeD.Domain.Entities;

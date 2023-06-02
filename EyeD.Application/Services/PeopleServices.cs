@@ -34,7 +34,7 @@ public class PeopleServices : IPeopleServices
 
         }
         var people = new People(
-            new FullName(viewModel.FirstName, viewModel.SecondName, viewModel.ThirdName),
+            new FullName(viewModel.FirstName),
             new FaceId(viewModel.FaceId),
             new ImageId(viewModel.ImageId),
             new ExternalImageId(viewModel.ExternalImageId),
@@ -70,7 +70,7 @@ public class PeopleServices : IPeopleServices
         var peopleExistente = await _peopleRepository.GetOneWhere(p => p.Id == id) ?? throw new Exception("Pessoa inexistente.");
 
         peopleExistente.Update(
-           new FullName(viewModel.FirstName, viewModel.SecondName, viewModel.ThirdName),
+           new FullName(viewModel.FirstName),
            new FaceId(viewModel.FaceId),
            new ImageId(viewModel.ImageId),
            new ExternalImageId(viewModel.ExternalImageId),

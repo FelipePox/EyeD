@@ -10,7 +10,6 @@ public sealed class UnitOfWork : IUnitOfWork
     {
         _context = context;
     }
-
     public async Task<int> SaveChangesAsync()
-        => await _context.SaveChangesAsync();
+    => await _context.SaveChangesAsync();
 }

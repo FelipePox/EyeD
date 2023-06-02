@@ -252,16 +252,6 @@ namespace EyeD.Infra.Data.Migrations
                                 .HasColumnType("varchar(20)")
                                 .HasColumnName("FirstName");
 
-                            b1.Property<string>("SegundoNome")
-                                .IsRequired()
-                                .HasColumnType("varchar(60)")
-                                .HasColumnName("SecondName");
-
-                            b1.Property<string>("TerceiroNome")
-                                .IsRequired()
-                                .HasColumnType("varchar(20)")
-                                .HasColumnName("ThirdName");
-
                             b1.HasKey("PeopleId");
 
                             b1.ToTable("Peoples");

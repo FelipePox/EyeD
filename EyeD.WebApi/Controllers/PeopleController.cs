@@ -70,8 +70,6 @@ namespace EyeD.WebApi.Controllers
         /// 
         ///     {
         ///        "firstName": "Felipe",
-        ///        "secondName": "Rocha",
-        ///        "thirdName": "Cardoso",
         ///        "faceId": 001B63844556,
         ///        "imageId": 001c6d844556,
         ///        "externalImageId": 001Bd63844d556,
