@@ -56,9 +56,8 @@ public sealed class VehicleController : ControllerBase
     ///        "model": "Ford-Mustang 2018",
     ///        "modelYear": "2023",
     ///        "brand": "Ford",
-    ///        "referenceDocument" : asd-fcd-fgcdsas
-    ///        
-    ///
+    ///        "referenceDocument" : asd-fcd-fgcdsas,
+    ///        "motivo" : "furto de carro"
     ///     }
     ///     
     /// </remarks>

@@ -38,9 +38,8 @@ public sealed class DomainToViewModelProfile : Profile
           .ForMember(dest => dest.Model, act => act.MapFrom(src => src.Model.Texto))
           .ForMember(dest => dest.ModelYear, act => act.MapFrom(src => src.ModelYear.Texto))
           .ForMember(dest => dest.Brand, act => act.MapFrom(src => src.Brand.Texto))
-          .ForMember(dest => dest.ReferenceDocument, act => act.MapFrom(src => src.ReferenceDocument.Texto));
-
-
+          .ForMember(dest => dest.ReferenceDocument, act => act.MapFrom(src => src.ReferenceDocument.Texto))
+          .ForMember(dest => dest.Motivo, act => act.MapFrom(src => src.Motivo.Texto));
 
         CreateMap<HMDs, ResponseHMDViewModel>()
          .ForMember(dest => dest.SKU, act => act.MapFrom(src => src.SKU.Texto))

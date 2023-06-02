@@ -36,7 +36,8 @@ public sealed class VehicleServices : IVehicleServices
            new Model(viewModel.Model),
            new Brand(viewModel.Brand),
            new ModelYear(viewModel.ModelYear),
-           new ReferenceDocument(viewModel.ReferenceDocument)
+           new ReferenceDocument(viewModel.ReferenceDocument),
+           new Description(viewModel.Motivo)
            );
 
         if (!veiculo.IsValid)
@@ -77,7 +78,8 @@ public sealed class VehicleServices : IVehicleServices
            new Model(viewModel.Model),
            new Brand(viewModel.Brand),
            new ModelYear(viewModel.ModelYear),
-          new ReferenceDocument(viewModel.ReferenceDocument)
+           new ReferenceDocument(viewModel.ReferenceDocument),
+           new Description(viewModel.Motivo)
             );
 
         if (!veiculoExistente.IsValid)

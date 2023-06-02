@@ -138,20 +138,19 @@
             <summary>
             Registrar um novo Veículo.
             </summary>
-             <remarks>
-             Exemplo de payload:
-             
-                 {
-                    "plate": "BRA2E19",
-                    "model": "Ford-Mustang 2018",
-                    "modelYear": "2023",
-                    "brand": "Ford",
-                    "referenceDocument" : asd-fcd-fgcdsas
-                    
+            <remarks>
+            Exemplo de payload:
             
-                 }
-                 
-             </remarks>
+                {
+                   "plate": "BRA2E19",
+                   "model": "Ford-Mustang 2018",
+                   "modelYear": "2023",
+                   "brand": "Ford",
+                   "referenceDocument" : asd-fcd-fgcdsas,
+                   "motivo" : "furto de carro"
+                }
+                
+            </remarks>
         </member>
         <member name="M:EyeD.WebApi.Controllers.VehicleController.Put(EyeD.Application.ViewModels.Vehicles.RequestVehicleViewModel,System.Guid)">
             <summary>

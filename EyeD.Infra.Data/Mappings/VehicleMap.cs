@@ -2,60 +2,68 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace EyeD.Infra.Data.Mappings
+namespace EyeD.Infra.Data.Mappings;
+
+public sealed class VehicleMap : IEntityTypeConfiguration<Vehicles>
 {
-    public sealed class VehicleMap : IEntityTypeConfiguration<Vehicles>
+    public void Configure(EntityTypeBuilder<Vehicles> builder)
     {
-        public void Configure(EntityTypeBuilder<Vehicles> builder)
+        builder.HasKey(c => c.Id);
+
+        builder.Ignore(v => v.Notifications);
+
+        builder.OwnsOne(c => c.Plate, nome =>
+         {
+             nome.Property(n => n.Texto)
+             .HasColumnName("Placa")
+             .HasColumnType("varchar(7)");
+
+             nome.Ignore(n => n.Notifications);
+         });
+
+        builder.OwnsOne(c => c.Model, nome =>
         {
-            builder.HasKey(c => c.Id);
+            nome.Property(n => n.Texto)
+            .HasColumnName("Modelo")
+            .HasColumnType("varchar(60)");
 
-            builder.Ignore(v => v.Notifications);
+            nome.Ignore(n => n.Notifications);
+        });
 
-            builder.OwnsOne(c => c.Plate, nome =>
-             {
-                 nome.Property(n => n.Texto)
-                 .HasColumnName("Placa")
-                 .HasColumnType("varchar(7)");
+        builder.OwnsOne(c => c.ModelYear, nome =>
+        {
+            nome.Property(n => n.Texto)
+            .HasColumnName("ModeloAno")
+            .HasColumnType("varchar(4)");
 
-                 nome.Ignore(n => n.Notifications);
-             });
+            nome.Ignore(n => n.Notifications);
+        });
 
-            builder.OwnsOne(c => c.Model, nome =>
-            {
-                nome.Property(n => n.Texto)
-                .HasColumnName("Modelo")
-                .HasColumnType("varchar(60)");
+        builder.OwnsOne(c => c.Brand, nome =>
+        {
+            nome.Property(n => n.Texto)
+            .HasColumnName("Marca")
+            .HasColumnType("varchar(60)");
 
-                nome.Ignore(n => n.Notifications);
-            });
+            nome.Ignore(n => n.Notifications);
+        });
 
-            builder.OwnsOne(c => c.ModelYear, nome =>
-            {
-                nome.Property(n => n.Texto)
-                .HasColumnName("ModeloAno")
-                .HasColumnType("varchar(4)");
+        builder.OwnsOne(c => c.ReferenceDocument, refe =>
+        {
+            refe.Property(n => n.Texto)
+            .HasColumnName("ReferenceDocument")
+            .HasColumnType("varchar(15)");
 
-                nome.Ignore(n => n.Notifications);
-            });
+            refe.Ignore(n => n.Notifications);
+        });
 
-            builder.OwnsOne(c => c.Brand, nome =>
-            {
-                nome.Property(n => n.Texto)
-                .HasColumnName("Marca")
-                .HasColumnType("varchar(60)");
+        builder.OwnsOne(c => c.Motivo, motivo =>
+        {
+            motivo.Property(n => n.Texto)
+            .HasColumnName("Motivo")
+            .HasColumnType("varchar(200)");
 
-                nome.Ignore(n => n.Notifications);
-            });
-
-            builder.OwnsOne(c => c.ReferenceDocument, refe =>
-            {
-                refe.Property(n => n.Texto)
-                .HasColumnName("ReferenceDocument")
-                .HasColumnType("varchar(15)");
-
-                refe.Ignore(n => n.Notifications);
-            });
-        }
+            motivo.Ignore(n => n.Notifications);
+        });
     }
 }
